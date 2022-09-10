@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Spot – Contact</title>
+    
+    <!-- Added to prepare for font change  -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+    <!-- Got side tracked and implemented some CSS beforehand, I hope it isn't an issue -->
+    <link href="stylesheet.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <center>
+        <div class = "header_logo"><img src="Images/Logo.png" style = "width: 30%;"> </div>
+        <hr class = "headertop">
+      </center> 
+      <nav>
+        <div id="mainSidebar" class="sidenav">
+          <ul>
+            <li><a href=index.html>Home Page</a></li>
+            <li><a href=aboutus.html>About Us</a></li>
+            <li><a href=history.html>History</a></li>
+            <li><a href=menu.html>Menu</a></li>
+            <!--<li><a href=#>Order</a></li> -->
+            <!--<li><a href=#>Chef</a></li> -->
+            <div class="active"><li><a href=contact.html>Contact</a></li></div>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="center">The Spot Contact Page</h1>
+    </header>
+    
+    
+
+    <main>
+      <form class = "contactcontainer" action="" method="post" autocomplete="on">
+        <center><h5 style="margin-bottom: 10px; margin-top: 10px">Tell Us What You Think!</h5></center>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" autocomplete="off" required>
+        <br>
+
+        <label for="pnumber">Phone Number:</label>
+        <input type="tel" id="pnumber" name="pnumber" required>
+        <br>
+
+        <label for="reason">Reason:</label>
+        <select id="reason" name="reasons">
+          <option value="question">General question</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="complaint">Issue with food, service, etc</option>
+          <option value="misc">Other</option>
+        </select>
+
+        <div class = "textareabox">
+          <label for="msgbox">Message:</label>
+          <textarea id="msgbox" name="msgbox" rows="4" cols="40" style = "font-size: large;"></textarea>
+          <br>
+        </div>
+
+        
+
+        <h2 style="font-size: 26px;">Enter your four-digit passcode, then click OK:</h2>
+        <input id="id1" type="number" min="1000" max="9999" required>
+        <button onclick= "myFunction()">OK</button>
+        <p id="passcode"></p>
+        <script>
+          function myFunction() {
+            var inpObj = document.getElementById("id1");
+            if (inpObj.checkValidity() == false) {
+              document.getElementById("passcode").innerHTML =
+              inpObj.validationMessage;
+            } else {
+              document.getElementById("passcode").innerHTML = "Passcode Valid, password set to " + inpObj.value;
+            }
+          }
+        </script>
+        <br>
+        <input type="submit" value="Submit" style="font-size:large">
+      </form>
+    </main>
+
+  </body>
+
+  <footer>
+    <center>©2027 The Spot, LLC. All Rights Reserved.</center>
+  </footer> 
+
+</html>
