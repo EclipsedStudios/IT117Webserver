@@ -123,6 +123,7 @@ input[type=number]{
     border-radius: 10px;
     margin-left: 33%;
     margin-right: 33%;
+    backdrop-filter: blur(3px);
 }
 
 .textareabox {
