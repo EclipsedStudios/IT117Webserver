@@ -16,6 +16,10 @@
     backdrop-filter: blur(2px);
 }
 
+#inline{
+    display: inline-flex;
+}
+
 .center {
     text-align: center;
     list-style-position: inside;
@@ -57,7 +61,15 @@ ul {
     background-color: #f1f1f1;
     backdrop-filter: blur(2x);
 }
-  
+
+#ulnormal {
+    list-style-type:disc;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: #f1f1f100;
+}
+
 li a {
     display: block;
     color: #000;
@@ -126,6 +138,15 @@ input[type=number]{
     backdrop-filter: blur(3px);
 }
 
+.ordercontainer{
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #6a575727;
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
 .textareabox {
     padding-top: 10px;
     display: flex;
@@ -144,6 +165,7 @@ input[type=number]{
     backdrop-filter: blur(2px);
     text-align: center;
 }
+
 
 .spottable_footer_top{
     padding-top: 10px;
@@ -172,15 +194,25 @@ body {
     background-color: white;
     font-family: Arial, Tahoma, sans-serif;
     background-color: white;
+    overflow: hidden;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;    /* Footer height */
+
+  }
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
 }
 
 footer {
-    position: relative;
-    padding: 10px 10px 0px 10px;
+    position: absolute;
     bottom: 0;
-    /* Height of the footer*/
-    height: 50;
-    background: rgba(128, 128, 128, 0.03);
+    width: 100%;
+    height: 2.5rem;  
 }
 
 #container {

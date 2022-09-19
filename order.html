@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Spot – Online Order</title>
+    
+    <!-- Added to prepare for font change  -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+    <!-- Got side tracked and implemented some CSS beforehand, I hope it isn't an issue -->
+    <link href="stylesheet.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <center>
+        <div class = "header_logo"><img src="Images/Logo.png" style = "width: 30%;"> </div>
+        <hr class = "headertop">
+      </center> 
+      <h1 class="center">Order Online!</h1>
+    </header>
+    
+    <nav>
+      <div id="mainSidebar" class="sidenav">
+        <ul>
+          <li><a href=index.html>Home Page</a></li>
+          <li><a href=aboutus.html>About Us</a></li>
+          <li><a href=history.html>History</a></li>
+          <li><a href=menu.html>Menu</a></li>
+          <div class="active"><li><a href="order.html">Order</a></li></div>
+          <li><a href="chef.html">Chef</a></li>
+          <li><a href=contact.html>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <center>
+        There are a few ways you can order!
+        <hr>
+
+        <ul id="ulnormal">
+          <li>Calling | 765-555-5555</li>
+          <li>Email</li>
+          <li>DoorDash [COMING SOON]</li>
+        </ul>
+
+        <p>
+          (Currently, there is only an option to pick up your food until
+           we setup delivery services like DoorDash)
+        </p>
+
+        <hr>
+        <div style="display:inline-flex">
+          <table id = "smallmenu" class = "spottable_top">
+            <tr>
+              <th>Hotdogs</th>
+              <th>Hamburgers</th>
+              <th>Sides</th>
+              <th>Drinks</th>
+            </tr>
+            <tr>
+              <td>Classic Dog - $2.50</td>
+              <td>Cheeseburger - $3</td>
+              <td>Fries - $2.50</td>
+              <td>Soft drinks - $2</td>
+            </tr>
+
+            <tr>
+                <td>Chicago Dog - $4.50</td>
+                <td>"Breakfast" Burger - $3.50</td>
+                <td>Chips - $1.50</td>
+                <td>Hot drinks - $1.50</td>
+              </tr>
+            <tr>
+                <td></td>
+                <td>Patty Melt - $3.25</td>
+                <td></td>
+                <td>Energy Drinks - $3.00</td>
+            </tr>
+            <tr>
+              <th colspan="4" >The "Doesn't fit in the above" Section</th>
+              </tr>
+              <tr>
+                  <td colspan="4" >Grilled Cheese - $2</td>
+              </tr>
+              <tr><td colspan="4" >Ice Cream - $2 (Chocolate or Vanilla)</td></tr>
+              <tr class="spottablesmalltext"><td colspan="4" >Turn it into a milkshake for $1</td></tr>
+              <tr>
+                  <td colspan="4" class="spottable_footer_top">Add an extra $1 for non-dairy versions of ice cream and milkshakes</td>
+            </tr>
+            <tr>
+                <td colspan="4"  class="spottable_footer_top">Toppings: Ketchup, Mustard, Relish, Mushrooms, Lettuce, Tomato, Cheese</td>
+            </tr>
+            <tr>
+                <td colspan="4"  class="spottable_footer">If you want something special, let us know and we will try our best!</td>
+            </tr>
+            <tr>
+              <td colspan="4"  class="spottable_footer">Soft Drinks: Coca-Cola, Diet Coke, Sprite, Barq's Root Beer, Mello Yello, Minute Maid Lemonade</td>
+          </tr>
+          </table>
+          <form class = "ordercontainer" action="" method="post" autocomplete="on">
+            <center><h4 style="margin-bottom: 10px; margin-top: 10px">Order via Email!</h4></center>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <br>
+    
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required>
+            <br>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" autocomplete="off" required>
+            <br>
+    
+            <label for="pnumber">Phone Number:</label>
+            <input type="tel" id="pnumber" name="pnumber" required>
+            <br>
+    
+            <div class = "textareabox">
+              <label for="msgbox">Order:</label>
+              <textarea id="msgbox" name="msgbox" rows="4" cols="40" style = "font-size: large;"></textarea>
+              <br>
+            </div>
+            <div style="font-size: small; font-weight: 100;" >
+              Example: Cheeseburger with only lettuce, Grilled Cheese, and 2 Cokes <br>
+              If we have any questions on the order, we will call or email in response
+            </div>
+
+            <br>
+            <input type="submit" value="Submit" style="font-size:large">
+            
+          </form>
+        </div>
+      </center>
+    </main>
+
+
+    <footer>
+      <center>
+        <div id="footnav">
+          <a href=index.html>Home Page</a> |
+          <a href=aboutus.html>About Us</a> |
+          <a href=history.html>History</a> |
+          <a href=menu.html>Menu</a> |
+          <a href="order.html">Order</a> |
+          <a href="chef.html">Chef</a> |
+          <a href=contact.html>Contact</a>
+        </div>
+        ©2027 The Spot, LLC. All Rights Reserved.
+      </center>
+    </footer> 
+  </body>
+</html>
